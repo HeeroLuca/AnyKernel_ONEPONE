@@ -121,6 +121,8 @@ dump_boot;
 
 # begin kernel changes
 
+# replace kernel dtb image
+cp -fp $patch/boot.img-dtb $split_img/boot.img-dtb
 
 # insert kernel modules
 cp -fp $patch/modules/* $modules
